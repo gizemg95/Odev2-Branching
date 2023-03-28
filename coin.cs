@@ -13,7 +13,7 @@ public class CoinCollection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Coin"))
+        if (other.gameObject.CompareTag("coin"))
         {
             Destroy(other.gameObject);
             click.Play();
